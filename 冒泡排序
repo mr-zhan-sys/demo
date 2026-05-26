@@ -1,0 +1,22 @@
+def bubble_sort(arr):
+  """
+  冒泡排序算法
+
+  参数:
+    arr: 要排序的列表
+
+  返回:
+    已排序的列表
+  """
+
+  n = len(arr)
+  for i in range(n):
+    for j in range(0, n - i - 1):
+      if arr[j] > arr[j + 1]:
+        arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
+  return arr
+arr = bubble_sort([2,31,33,66,55,23])
+print(arr)
+
+
